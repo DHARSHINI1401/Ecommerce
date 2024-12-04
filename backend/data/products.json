@@ -6,10 +6,7 @@
     "images": [
       {
         "image": "/images/products/1.jpg"
-      },
-      {
-        "image": "/images/products/2.jpg"
-      }
+      }      
     ],
     "category": "Mobile Phones",
     "seller": "Amazon",
