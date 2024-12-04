@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const dotenv=require('dotenv');
 const path=require('path');
-const cors=require('cors');
+const cors = require('cors');
 const connectDb=require('./config/connectDb');
 
 dotenv.config({path:path.join(__dirname,'config','config.env')})
