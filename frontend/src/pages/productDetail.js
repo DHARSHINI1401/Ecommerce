@@ -28,7 +28,7 @@ export default function ProductDetail() {
             <div className="row f-flex justify-content-around">
                 <div className="col-12 col-lg-5 img-fluid" id="product_image">
                     <img
-                        src={product.images[0]?.image || "/placeholder.png"} // Fallback for missing image
+                        src={product.images[0]?.image || "/placeholder.png"} 
                         alt="Product"
                         height="500"
                         width="500"
@@ -36,7 +36,7 @@ export default function ProductDetail() {
                 </div>
 
                 <div className="col-12 col-lg-5 mt-5">
-                    <h3>{product.className}</h3>
+                    <h3>{ product.name} </h3>
                     <p id="product_id">Product # {product._id}</p>
 
                     <hr />
@@ -73,12 +73,8 @@ export default function ProductDetail() {
 
                     <hr />
 
-                    <p>
-                        Status:{" "}
-                        <span id="stock_status">
-                            {product.stock > 0 ? "In Stock" : "Out of Stock"}
-                        </span>
-                    </p>
+                    <p>Status: <span id="stock_status" className={product.stock > 0 ?'text-success':'text-danger'}>{product.stock > 0  ?'In Stock' : 'Out of Stock'}</span></p>
+
 
                     <hr />
 
