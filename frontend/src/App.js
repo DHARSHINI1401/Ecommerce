@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductDetail from './pages/productDetail';
 import 'react-toastify/dist/ReactToastify.css';
+import Cart from './pages/cart';
 
 function App() {
   const [cartItems,setCartItems] = useState([]);
@@ -21,6 +22,7 @@ function App() {
             < Route path="/" element ={ <Home /> } />
             < Route path="/search" element ={ <Home /> } />
             < Route path="/product/:id" element ={ <ProductDetail cartItems={cartItems} setCartItems={setCartItems}/> } />
+            < Route path="cart" element ={ <Cart cartItems={cartItems} setCartItems={setCartItems}/> } />
             < Route path="*" element={<h1>404: Page Not Found</h1>} />
           </Routes>
         </div>
