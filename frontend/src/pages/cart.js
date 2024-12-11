@@ -5,55 +5,8 @@ import {toast} from 'react-toastify';
 export default function Cart({cartItems, setCartItems}) {
     const [complete, setComplete] = useState(false);
 
-    function increaseQty(item) {
-        if (item.product.stock == item.qty) {
-            return;
-        }
-        const updatedItems = cartItems.map((i) => {
-            if(i.product._id == item.product._id) {
-                i.qty++
-            }
-            return i;
-        })
-        setCartItems(updatedItems)
-    }
 
-    function decreaseQty(item) {
-        if (item.qty > 1) {
-            const updatedItems = cartItems.map((i) => {
-                if(i.product._id == item.product._id) {
-                    i.qty--
-                }
-                return i;
-            })
-            setCartItems(updatedItems)
-        }
-    }
-
-    function removeItem(item) {
-        const updatedItems = cartItems.filter((i) => {
-            if(i.product._id !== item.product._id) {
-                return true;
-            }
-        })
-        setCartItems(updatedItems)
-    }
-
-    function placeOrderHandler() {
-        fetch(process.env.REACT_APP_API_URL+'/order', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(cartItems)
-        })
-        .then(() => { 
-            setCartItems([]); 
-            setComplete(true);
-            toast.success("Order Success!")
-        })
-    }
-
-
-
+    
     return  cartItems.length > 0 ? <Fragment>
                 <div class="container container-fluid">
                     <h2 class="mt-5">Your Cart: <b>{cartItems.length} items</b></h2>
