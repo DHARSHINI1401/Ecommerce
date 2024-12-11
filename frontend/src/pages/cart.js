@@ -29,7 +29,17 @@ export default function Cart({cartItems, setCartItems}) {
             setCartItems(updatedItems)
         }
     }
+    
+    function removeItem(item) {
+        const updatedItems = cartItems.filter((i) => {
+            if(i.product._id !== item.product._id) {
+                return true;
+            }
+        })
+        setCartItems(updatedItems)
+    }
 
+    
     
 
 
