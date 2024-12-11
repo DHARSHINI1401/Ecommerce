@@ -18,7 +18,20 @@ export default function Cart({cartItems, setCartItems}) {
         setCartItems(updatedItems)
     }
 
+    function decreaseQty(item) {
+        if (item.qty > 1) {
+            const updatedItems = cartItems.map((i) => {
+                if(i.product._id == item.product._id) {
+                    i.qty--
+                }
+                return i;
+            })
+            setCartItems(updatedItems)
+        }
+    }
+
     
+
 
     
     return  cartItems.length > 0 ? <Fragment>
