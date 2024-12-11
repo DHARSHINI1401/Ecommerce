@@ -38,6 +38,18 @@ export default function Cart({cartItems, setCartItems}) {
         })
         setCartItems(updatedItems)
     }
+    function placeOrderHandler() {
+        fetch(process.env.REACT_APP_API_URL+'/order', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(cartItems)
+        })
+        .then(() => { 
+            setCartItems([]); 
+            setComplete(true);
+            toast.success("Order Success!")
+        })
+    }
 
     
     
