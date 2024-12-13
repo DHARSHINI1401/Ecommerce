@@ -5,11 +5,12 @@ export default function Header({cartItems}) {
     return <nav className="navbar row">
         <div className="col-12 col-md-3">
             <div className="navbar-brand"> 
-                <Link to='/'> <img width="150px" src="/images/logo.png" /></Link>
+                <h2>SHOPPY<span>KART</span></h2>
+                {/* <Link to='/'> <img width="150px" src="/images/logo.png" /></Link> */}
             </div>
         </div>
 
-        <div className="col-12 col-md-6 mt-2 mt-md-0">
+        <div className="col-12 col-md-2 mt-2 mt-md-0">
             <Search />
         </div>
 

@@ -17,7 +17,7 @@ export default function Search() {
             onChange={(e)=>setKeyword(e.target.value)}
             class="form-control"
             onBlur={searchHandler}
-            placeholder="Enter Product Name ..."
+            placeholder="Search.."
         />
         <div className="input-group-append">
             <button onClick={searchHandler} id="search_btn" className="btn">
