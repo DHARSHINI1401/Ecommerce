@@ -11,17 +11,7 @@ export default function Header({ cartItems }) {
             </div>
         </div>
 
-        <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
-            <Link to={'/'}>
-                <span id="cart" className="ml-5">HOME</span>
-            </Link>
-            <Link to={'/'}>
-                <span id="cart" className="ml-5">ABOUT</span>
-            </Link>
-            <Link to={'/'}>
-                <span id="cart" className="ml-5">PRODUCTS</span>
-            </Link>
-        </div>
+        
 
         <div className="col-12 col-md-2 mt-2 mt-md-0">
             <Search />

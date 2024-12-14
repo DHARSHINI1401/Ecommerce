@@ -17,7 +17,6 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
- 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -27,13 +26,14 @@
 
 .App-link {
   color: #dbebf0;
-  
+
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -72,6 +72,9 @@ nav {
   background-color: #232f3e;
   padding: 1rem 1rem;
 }
+
+
+
 
 #search_btn {
   background-color: #febd69;
@@ -187,7 +190,61 @@ footer {
 
 .rating-inner::before {
   content: '\f005 \f005 \f005 \f005 \f005';
-  color: #f8ce0b;
+  color: #eecc24;
+}
+
+/*About page */
+:root {
+  --bg-color: white;
+  --second--bg-color: black;
+  --main-color: rgb(131, 48, 87);
+}
+
+.about {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  top: 5em;
+  background-color: var(--second--bg-color);
+  padding: 5em;
+
+}
+
+.content1 {
+  width: 500px;
+  color: var(--bg-color);
+}
+
+.content1 h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  color: var(--main-color);
+  margin: 10px 0 10px 0;
+
+}
+
+.content1 h3 {
+
+  font-weight: 500;
+  font-size: medium;
+}
+
+.content1 button {
+  margin: 2em 0;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  border-radius: 5px;
+  border: transparent;
+  color: aliceblue;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px rgb(156, 44, 68);
+  cursor: pointer;
+}
+
+.content1 button i {
+  margin-left: 15px;
+  font-size: 1rem;
 }
 
 /* Product Details Page */
@@ -242,6 +299,7 @@ footer {
   height: 80px;
   padding-left: 0;
 }
+
 .loader:after {
   content: ' ';
   display: block;
@@ -253,10 +311,12 @@ footer {
   border-color: #fa9c23 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -537,6 +597,7 @@ footer {
   top: 0;
   z-index: 10;
 }
+
 #sidebar {
   min-width: 100%;
   max-width: 100%;
@@ -544,6 +605,7 @@ footer {
   color: #fff;
   transition: all 0.3s;
 }
+
 #sidebar.active {
   margin-left: -250px;
 }
@@ -552,6 +614,7 @@ footer {
   padding: 20px;
   background: #232f3e;
 }
+
 #sidebar ul.components {
   padding: 5px 0px;
   border-bottom: 1px solid #232f3e;
@@ -564,6 +627,7 @@ footer {
   color: white;
   text-decoration: none;
 }
+
 #sidebar ul li a:hover {
   color: #232f3e;
   background: #fff;
@@ -573,14 +637,16 @@ footer {
   margin-right: 0.3rem;
 }
 
-#sidebar ul li.active > a,
+#sidebar ul li.active>a,
 a[aria-expanded='true'] {
   color: #fff;
   background: #232f3e;
 }
+
 a[data-toggle='collapse'] {
   position: relative;
 }
+
 .dropdown-toggle::after {
   display: block;
   position: absolute;
