@@ -15,7 +15,9 @@ export default function Header({ cartItems }) {
             <Link to={'/'}>
                 <span id="cart" className="ml-5">HOME</span>
                 <span id="cart" className="ml-5">ABOUT</span>
-                <span id="cart" className="ml-5">PRODUCTS</span>
+            </Link>
+            <Link to={'/products'}>
+            <span id="cart" className="ml-5">PRODUCTS</span>
             </Link>
         </div>
 
