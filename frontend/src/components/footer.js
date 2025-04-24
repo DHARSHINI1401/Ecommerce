@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 footer-content">
-                        <h3>ShoppyKart</h3>
+                        <h3 style={{color:"black"}}>KartX</h3>
                         <p>Shop the latest trends, exclusive deals, and top-quality products, all in one place!</p>
 
                         <p>
@@ -41,7 +41,7 @@ export default function Footer() {
                                         <p>London, UK
                                          13h Street, Office 180</p>
                                         <strong><i className="fas fa-phone"></i> Phone: <strong>+000000000000000</strong></strong><br />
-                                        <strong><i className="fa-solid fa-envelope"></i> Email: <strong>shoppykart@gmail.com</strong></strong>
+                                        <strong><i className="fa-solid fa-envelope"></i> Email: <strong>kartx@gmail.com</strong></strong>
                                         <div className="socail-links mt-3">
                                             <a href="#" className="twiiter"><i class="fa-brands fa-twitter"></i></a>
                                             <a href="#" className="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
@@ -57,7 +57,7 @@ export default function Footer() {
                         color:"white"}}/>
                         <div class="container py-4">
                             <div class="copyright">
-                                &copy; Copyright <strong> KartX</strong>.All Rights Reserved |  Designed By <a href="#">DHARSHINI</a>
+                                &copy; Copyright <strong > KartX</strong>.All Rights Reserved |  Designed By <a href="#" style={{color:"black"}}>DHARSHINI</a>
                             </div>
                            
                             </div>

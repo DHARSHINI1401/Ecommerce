@@ -19,7 +19,7 @@ export default function ProductCart({product}) {
                     </div>
                 </div>
                 <p className="card-text">${product.price}</p>
-                < Link to={"/product/"+product._id}  className="btn btn-primary" >View Details</Link>
+                < Link to={"/product/"+product._id}  className="btn" id="cart_btn" >View Details</Link>
             </div>
         </div>
     </div>

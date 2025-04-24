@@ -16,7 +16,7 @@
   --main-color: #8e70cf;      
   --secondary-color: white;/* Light grey */
   --heading-color: #222222;   /* Dark grey */
-  --btn-color: #6899c7;       /* Blue */
+  --btn-color: #5c88b1;       /* Blue */
 }
 
 .App-header {
@@ -73,14 +73,6 @@ body {
   background-clip: padding-box;
   border-radius: 5px;
 }
-
-nav {
-  background-color: var(--secondary-color);
-  padding: 1rem 1rem;
-  
-}
-
-
 
 
 #search_btn {
@@ -186,7 +178,6 @@ nav {
   color: white;
 }
 #footer .footer-top .footer-contact h3{
-  color: white;
   text-shadow: 1px 1px 1px black;
 }
 #footer .footer-top .footer-contact h4{
@@ -204,7 +195,8 @@ nav {
   font-weight: 700;
 }
 #footer .footer-top h4{
-  font-size: 16px;
+  font-size: 22px;
+  color: var(--heading-color);
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -220,6 +212,7 @@ nav {
 #footer .footer-top .footer-links ul li{
   padding-right: 10px 0;
   display: flex;
+  font-size: 18px;
   align-items: center;
 }
 #footer .footer-top .footer-links ul li:first-child{
@@ -275,7 +268,7 @@ nav {
 
 .rating-inner::before {
   content: '\f005 \f005 \f005 \f005 \f005';
-  color: var(--main-color);
+  color: var(--btn-color);
 }
 
 
@@ -305,7 +298,6 @@ nav {
 }
 
 .content1 h3 {
-
   font-weight: 500;
   font-size: medium;
 }
@@ -342,6 +334,7 @@ nav {
 #review_btn {
   border-radius: 2rem;
   background-color: var(--btn-color);
+  color: var(--secondary-color);
   border: none;
   padding: 0.5rem 2rem;
 }
