@@ -5,7 +5,7 @@ export default function ProductCart({product}) {
         <div className="card p-3 rounded">
             <img
                 className="card-img-top mx-auto"
-                src={product.images[0].image}
+                src={product.images[0].image} alt={product.name}
             />
             <div className="card-body d-flex flex-column">
                 <h5 className="card-title">
@@ -19,7 +19,7 @@ export default function ProductCart({product}) {
                     </div>
                 </div>
                 <p className="card-text">${product.price}</p>
-                < Link to={"/product/"+product._id} id="view_btn" className="btn btn-block">View Details</Link>
+                < Link to={"/product/"+product._id}  className="btn btn-primary" >View Details</Link>
             </div>
         </div>
     </div>

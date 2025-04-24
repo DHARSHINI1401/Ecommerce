@@ -57,7 +57,7 @@ export default function Footer() {
                         color:"white"}}/>
                         <div class="container py-4">
                             <div class="copyright">
-                                &copy; Copyright <strong>ShoppyKart</strong>.All Rights Reserved |  Designed By <a href="#">DHARSHINI</a>
+                                &copy; Copyright <strong> KartX</strong>.All Rights Reserved |  Designed By <a href="#">DHARSHINI</a>
                             </div>
                            
                             </div>
