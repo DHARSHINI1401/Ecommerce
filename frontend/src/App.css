@@ -322,7 +322,9 @@ body {
   cursor: pointer;
 }
 .content1 button:hover{
-  color: var(--main-color);
+  color: var(--secondary-color);
+  background-color: var(--btn-color);
+  box-shadow: 0 0 10px var(--btn-color);
 }
 
 .content1 button i {
