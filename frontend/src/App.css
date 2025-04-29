@@ -14,9 +14,9 @@
 }
 :root {
   --main-color: #8e70cf;      
-  --secondary-color: white;/* Light grey */
-  --heading-color: #222222;   /* Dark grey */
-  --btn-color: #5c88b1;       /* Blue */
+  --secondary-color: white;
+  --heading-color: #222222;   
+  --btn-color: #5c88b1;       
 }
 
 .App-header {
