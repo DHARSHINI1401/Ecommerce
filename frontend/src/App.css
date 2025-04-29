@@ -78,6 +78,15 @@ body {
 #search_btn {
   background-color: var(--btn-color);
 }
+.navbar-brand h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--heading-color);
+  
+}
+.navbar-brand h2 i:hover{
+  text-decoration: none;
+}
 
 .input-group {
   width: 90%;
@@ -309,9 +318,11 @@ body {
   border-radius: 5px;
   border: transparent;
   color: var(--main-color);
-  background-color: var(--secondary-color);
   box-shadow: 0 0 10px rgb(97, 98, 155);
   cursor: pointer;
+}
+.content1 button:hover{
+  color: var(--main-color);
 }
 
 .content1 button i {

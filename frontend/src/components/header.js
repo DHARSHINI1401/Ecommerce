@@ -7,14 +7,13 @@ export default function Header({ cartItems }) {
         <div className="col-12 col-md-3">
             <div className="navbar-brand">
 
-                <Link to='/'> <h2>kart<i style={{color:"#8e70cf"}}>X</i></h2></Link>
+                <Link to='/'> <h2>Kart<i style={{color:"#8e70cf"}}>X</i></h2></Link>
             </div>
         </div>
 
         <div className="col-12 col-md-3 mt-4 mt-md-0 text-center" >
             <Link to={'/'}>
                 <span id="cart" className="ml-5">HOME</span>
-                <span id="cart" className="ml-5">ABOUT</span>
             </Link>
             <Link to={'/products'}>
             <span id="cart" className="ml-5">PRODUCTS</span>
